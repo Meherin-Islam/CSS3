@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 200px;
+            border: 2px solid tomato;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .one{
+            /* overflow: auto; it uses scrollbar when needed */
+overflow: hidden;
+        }
+        .two{
+            overflow: scroll;
+            
+        }
+        .ellipsis{
+            width: 200px;
+            white-space: nowrap;
+            border: 3px solid rgb(240, 27, 3);
+            overflow: hidden;
+            /* text-overflow: ellipsis;  when mouse is hoveres everything is seen */
+            /* text-overflow: clip; same as hidden */
+        }
+    </style>
+</head>
+<body>
+    <p title="Hi i am learning web development . Today i am learning text overflow, ellipsis etc. I hope i will learn everything very soon" class="ellipsis">Hi i am learning web development . Today i am learning text overflow, ellipsis etc. I hope i will learn everything very soon</p>
+    <div class="box one">
+        <h3>My Box 1</h3>
+        <p class="flow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, velit facilis rem quo tenetur reprehenderit? Voluptate suscipit ut consequuntur culpa  aliquam est! Fugiat provident distinctio debitis numquam. Architecto?
+        Dolores, blanditiis! Quas debitis voluptatem commodi ex voluptates placeat quod accusantium, ad atque consequuntur repudiandae eos soluta sed, esse at? Qui fugit earum quis iusto at, laborum eveniet!
+        Sapiente voluptatum impedit assumenda accusantium et officiis pariatur? Porro voluptatum, ut accusamus quas hic obcaecati aspernatur possimus saepe laboriosam, ea, modi quo olorum, optio, id necessitatibus aliquam saepe, eius cum autem. 
+       error ratione, et praesentium explicabo voluptatem cumque facilis.</p>
+    </div>
+    <div class="box two">
+        <h3>My Box 2</h3>
+        <p class="flow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ducimus fugiat, perspiciatis laudantium, quis molestiae illum veritatis ex at sed iusto cum tenetur accusantium porro. Animi quibusdam exercitationem culpa 
+        quibusdam, nemo reiciendis ut quo autem maiores deleniti. Optio veniam reprehenderit, asperiores expedita aliquam natus repellat? Eius quae aut aspernatur natus quas provident, cidunt  magni blanditiis rerum molestias quisquam deserunt tempore minima sit adipisci eius, officia qui dicta, atque fuga incidunt rem omnis odit voluptatibus est a eligendi optio error. Quidem.</p>
+    </div>
+   
+</body>
+</html>
